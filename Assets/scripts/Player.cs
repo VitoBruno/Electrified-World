@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         GameController.moedas = 0;
+        GameController.pontuacao = 0;
         rdb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();

@@ -17,9 +17,5 @@ public class Menu : MonoBehaviour
     }
     void Start()
     {
-        //menu = GameController.gc;
-        //int pontuacao2 = PlayerPrefs.GetInt("pontuacao1");
-        //string TextPontos = pontuacao2.ToString();
-        //string TextPontos = PlayerPrefs.GetInt("pontuacao1").ToString();
     }
 }

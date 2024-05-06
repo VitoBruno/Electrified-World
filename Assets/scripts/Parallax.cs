@@ -3,24 +3,15 @@ using System.Collections;
 
 public class Parallax : MonoBehaviour
 {
-
-    public float velocidade = 0;
-    private Material textura;
-    private GameObject player;
-
-    private float posicao = 0;
-
-    void Start()
+    private MeshRenderer meshRenderer;
+    public float speed;
+    private void Awake()
     {
-        textura = GetComponent<Renderer>().material;
-        player = GameObject.FindGameObjectWithTag("Player");
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
-        var lado = player.transform.localScale.x;
-        posicao += velocidade * lado;
-
-        textura.mainTextureOffset = new Vector2(posicao, 0);
+        meshRenderer.material.mainTextureOffset += (Vector2.right * (speed * Time.deltaTime));
     }
 }

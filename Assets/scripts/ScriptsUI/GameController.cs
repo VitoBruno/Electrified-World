@@ -34,6 +34,5 @@ public class GameController : MonoBehaviour
     public void ChangeScene(Scene Jogo)
     {
         PlayerPrefs.SetInt("pontuacao1", pontuacao);
-        //SceneManager.LoadScene(Jogo);
     }
 }

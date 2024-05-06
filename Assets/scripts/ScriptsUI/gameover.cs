@@ -10,14 +10,9 @@ public class gameover : MonoBehaviour
 
     public Text moedasTela;
      
- 
 
-    //private Player scriptPlayer;
 
     void Start()
     {
-       
-        //recordeTela.text = ScriptGameController.pontuacao.ToString();
-         //print(ScriptGameController.pontuacao.ToString());
     }
 }
